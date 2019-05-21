@@ -5,7 +5,7 @@
 
 -Open the executable, the first use it will asscociate **.cwMake** files. *The menu "Config/Set cwc" do the same thing.*
 
--Dowload this repo. Some **.cwMake** is avalaible under the cwc folder. Double click on it, the *Toolchains* and *Libs* will be automaticly downloader, then compiled.
+-Download this repo. Some **.cwMake** is avalaible under the cwc folder. Double click on it, the *Toolchains* and *Libs* will be automaticly downloader, then compiled.
 
 
 ### Lib (.dll/.so/.a) for Emsciptem and Windows
