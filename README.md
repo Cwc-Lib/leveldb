@@ -1,7 +1,7 @@
 # LevelDB Cwc version
 
 ## How to build
--Grab the last Cwc Release [Cwc](https://github.com/VLiance/Cwc/releases)
+-Grab the last [Cwc](https://github.com/VLiance/Cwc/releases) Release
 
 -Open the executable, the first use it will asscociate **.cwMake** files. *The menu "Config/Set cwc" do the same thing.*
 
