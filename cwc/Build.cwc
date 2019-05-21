@@ -1,0 +1,46 @@
+-{vFlag}=
+-DLEVELDB_PLATFORM_WINDOWS
+-DLEVELDB_IS_BIG_ENDIAN=0
+-DNDEBUG
+>
+-{vIncl}=
+-I ../ 
+-I ../include/
+>
+;Build db
+-c ../db/ -o obj/cpp_{_sPlatform}_{_sOpt}/lib/db/
+-{vIncl} -{vFlag}
+>
+;Build helpers
+-c ../helpers/ -o obj/cpp_{_sPlatform}_{_sOpt}/lib/helpers/
+-{vIncl} -{vFlag}
+>
+;Build port
+-c ../port/ -o obj/cpp_{_sPlatform}_{_sOpt}/lib/port/
+-{vIncl} -{vFlag}
+>
+;Build table
+-c ../table/ -o obj/cpp_{_sPlatform}_{_sOpt}/lib/table/
+-{vIncl} -{vFlag}
+>
+;Build util
+-c ../util/ -o obj/cpp_{_sPlatform}_{_sOpt}/lib/util/
+-{vIncl} -{vFlag}
+>
+;Build Env
+-c ../env/{_sPlatform}/ -o obj/cpp_{_sPlatform}_{_sOpt}/lib/env/
+-I ../test/
+-{vIncl} -{vFlag}
+>
+;Build Test
+-c ../test/table/table_test.cc -o obj/cpp_{_sPlatform}_{_sOpt}/test/table_test.o
+-{vIncl} -{vFlag}
+>
+;Generate Dynamic Lib
+-o obj/cpp_{_sPlatform}_{_sOpt}/lib/ -#To Lib/{_sPlatform}_{_sOpt}/levelDb.{_sDynamic} -{lpThread}
+>
+;Generate Static Lib
+-o obj/cpp_{_sPlatform}_{_sOpt}/lib/ -#To Lib/{_sPlatform}_{_sOpt}/levelDb.a
+>
+;Generate executable
+-o obj/cpp_{_sPlatform}_{_sOpt}/ -#To _out/{_sPlatform}_{_sOpt}/App.*  -{lpThread}

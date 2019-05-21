@@ -6,3 +6,8 @@
 # Build directory.
 build/
 out/
+obj/
+_out/
+
+# Others.
+*.wdat
