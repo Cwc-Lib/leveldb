@@ -1,3 +1,24 @@
+**LevelDB Cwc version
+
+## How to build
+-Grab the last Cwc Release [Cwc](https://github.com/VLiance/Cwc/releases)
+
+-Open the executable, the first use it will asscociate **.cwMake** files. *The menu "Config/Set cwc" do the same thing.*
+
+-Dowload this repo. Some **.cwMake** is avalaible under the cwc folder. Double click on it, the *Toolchains* and *Libs* will be automaticly downloader, then compiled.
+
+
+### Lib (.dll/.so/.a) for Emsciptem and Windows
+[Libs](cwc/Lib)
+
+## Preview
+
+### Windows
+
+![Screen Shot](cwc/Demo.PNG)
+
+
+
 **LevelDB is a fast key-value storage library written at Google that provides an ordered mapping from string keys to string values.**
 
 [![Build Status](https://travis-ci.org/google/leveldb.svg?branch=master)](https://travis-ci.org/google/leveldb)
